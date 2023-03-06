@@ -1,57 +1,42 @@
-# 🚀 Getting started with Strapi
+# React E-Commerce App
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+This project is a web-based e-commerce application built using React, Sass, and Strapi CMS. I built this project as part of my learning journey with these technologies. The application allows users to browse products, add them to cart, and purchase them using Stripe payment gateway.
 
-### `develop`
+## Getting Started
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+### Prerequisites
 
-```
-npm run develop
-# or
-yarn develop
-```
+- Node.js
+- Strapi CMS
+- Stripe API keys (Test or Live)
 
-### `start`
+### Installation
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
+1. Clone the repository and navigate to the project directory.
+2. Install the dependencies using `npm install`.
+3. Set up the environment variables in `.env` file located in the `frontend` directory:
+  - `REACT_APP_STRIPE_DEV_APP_KEY`: Strapi cms API key for development environment.
+  - `REACT_APP_STRIPE_APP_DEV_URL`: URL of the backend server for development environment.
+  - `REACT_APP_STRIPE_PUBLISHABLE_KEY`: Stripe publishable key for payments.
+4. Run the frontend using `npm start` command in the `frontend` directory.
+5. Set up the environment variables in `.env` file located in the `backend` directory:
+  - `HOST`: Server hostname.
+  - `PORT`: Server port number.
+  - `APP_KEYS`: Strapi app keys.
+  - `API_TOKEN_SALT`: Salt for API tokens.
+  - `ADMIN_JWT_SECRET`: Secret for admin JWT token.
+  - `TRANSFER_TOKEN_SALT`: Salt for transfer tokens.
+  - `DATABASE_CLIENT`: Database client.
+  - `DATABASE_FILENAME`: Database filename.
+  - `JWT_SECRET`: Secret for JWT token.
+  - `STRIPE_KEY`: Stripe API key for payments.
+  - `CLIENT_URL`: URL of the frontend server.
+6. Run the backend using `npm run develop` command in the `backend` directory.
 
-```
-npm run start
-# or
-yarn start
-```
+## Usage
 
-### `build`
+Open the web browser and navigate to the URL of the frontend server. Browse products, add them to cart, and proceed to checkout. The Stripe payment gateway will be used to process the payment.
 
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
+## Contributing
 
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+Contributions are welcome. Please open an issue or submit a pull request
